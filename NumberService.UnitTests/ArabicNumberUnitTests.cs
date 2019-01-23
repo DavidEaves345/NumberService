@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Shouldly;
 
@@ -14,20 +14,6 @@ namespace NumberService.UnitTests
         {
             var result = _testee.ConvertToArabicNumber("I");
             result.ShouldBe(1);
-        }
-
-        [TestMethod]
-        public void GivenV_ShouldReturn5()
-        {
-            var result = _testee.ConvertToArabicNumber("V");
-            result.ShouldBe(5);
-        }
-
-        [TestMethod]
-        public void GivenX_Shouldreturn10()
-        {
-            var result = _testee.ConvertToArabicNumber("X");
-            result.ShouldBe(10);
         }
     }
 }
